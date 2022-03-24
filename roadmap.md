@@ -2,7 +2,8 @@
 
 0️⃣ Prérequis ( partie client )  
 1️⃣ Mise en place de la partie frontend du projet  
-2️⃣3️⃣4️⃣5️⃣6️⃣7️⃣8️⃣9️⃣0️⃣
+2️⃣ Routes pages  
+3️⃣4️⃣5️⃣6️⃣7️⃣8️⃣9️⃣0️⃣
 
 #
 
@@ -26,6 +27,15 @@ Ouvrir éditeur de code
 
 `code .`
 
+Supprimer les fichiers non utilisés
+
 Créer le repository sur github et faire le 1er commit
 
 Mise en place du frontend sur Netlify (optionnel)
+
+## 2️⃣ Routes pages
+
+Créer les routes signup / signin  
+📦Infos packages :  
+react-router-dom ([Aide](https://www.npmjs.com/package/react-router-dom))
+✅commit "Routing pages"
