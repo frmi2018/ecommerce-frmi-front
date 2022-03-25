@@ -49,6 +49,7 @@ Mise en place du frontend sur Netlify (optionnel)
 ✅commit "Menu and active link"
 
 🎫 Créer un layout commun à toutes les pages
+❌ Problème d'accès aux variables dans .env
 
 ✅commit "Shared layout component"
 
@@ -56,4 +57,6 @@ Mise en place du frontend sur Netlify (optionnel)
 
 ✅commit
 
-🎫 ❌ corriger problème d'accès aux variables dans .env
+🎫 Créer le formulaire d'inscription
+
+✅commit "Signup form handle change"
