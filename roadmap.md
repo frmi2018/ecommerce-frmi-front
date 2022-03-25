@@ -43,6 +43,10 @@ bootstrap ([Doc](https://getbootstrap.com/))
 
 ## 🎫 Créer le menu de navigation entre les pages
 
-## 🎫 Afficher le lien actif
+## 🎫 Afficher le lien de la page active d'une couleur différente des autres liens
 
 ✅commit "Menu and active link"
+
+## 🎫 Créer un layout commun à toutes les pages
+
+✅commit "Shared layout component"
