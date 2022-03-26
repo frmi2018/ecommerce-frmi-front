@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { Navigate } from "react-router-dom";
 import Layout from "../core/Layout";
-import { signin } from "../auth";
+import { signin, authenticate } from "../auth";
 
 const Signin = () => {
   const [values, setValues] = useState({
-    email: "",
-    password: "",
+    email: "user2@gmail.com",
+    password: "uuuuuu9",
     error: "",
     loading: false,
     redirectToReferrer: false,
@@ -25,15 +25,17 @@ const Signin = () => {
       if (data.error) {
         setValues({ ...values, error: data.error, loading: false });
       } else {
-        setValues({
-          ...values,
-          redirectToReferrer: true,
+        authenticate(data, () => {
+          setValues({
+            ...values,
+            redirectToReferrer: true,
+          });
         });
       }
     });
   };
 
-  const signUpForm = () => (
+  const signInForm = () => (
     <form>
       <div className="form-group">
         <label className="text-muted">Email</label>
@@ -82,12 +84,12 @@ const Signin = () => {
 
   return (
     <Layout
-      title="Signup"
-      description="Signup to React E-commerce App"
+      title="Signin"
+      description="Signin to React E-commerce App"
       className="container col-md-8 offset-md-2">
       {showLoading()}
       {showError()}
-      {signUpForm()}
+      {signInForm()}
       {redirectUser()}
       {/* {JSON.stringify(values)} */}
     </Layout>

@@ -64,7 +64,7 @@ Mise en place du frontend sur Netlify (optionnel)
 
 ✅commit "User signup"
 
-🎫 Controler la saisie name/email/password
+🎫 Controler la saisie name/email/password  
 🎫 Rediriger sur la page signin une fois inscrit
 
 ✅commit "User signup success and error"
@@ -73,9 +73,13 @@ Mise en place du frontend sur Netlify (optionnel)
 
 ✅commit "Code refactoring - Signup"
 
-🎫 Créer le formulaire de connexion
-🎫 Controler la saisie email/password
-🎫 Envoyer les données en back
+🎫 Créer le formulaire de connexion  
+🎫 Controler la saisie email/password  
+🎫 Envoyer les données en back  
 🎫 Rediriger sur la page home une fois connecté
 
 ✅commit "User signin"
+
+🎫 Sauvegarder les infos utilisateur et le token dans le localstorage du client
+
+✅commit "Save user and token in local storage"

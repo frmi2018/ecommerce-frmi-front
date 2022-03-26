@@ -19,8 +19,7 @@ export const signup = async (user) => {
 };
 
 export const signin = async (user) => {
-  // console.log(user);
-  // console.log(API);
+  // https://developer.mozilla.org/fr/docs/Web/API/Fetch_API
   try {
     const response = await fetch(`${API}/signin`, {
       method: "POST",
@@ -33,5 +32,13 @@ export const signin = async (user) => {
     return await response.json();
   } catch (response_1) {
     return response_1.json();
+  }
+};
+
+// https://developer.mozilla.org/fr/docs/Web/API/Window/localStorage
+export const authenticate = (data, next) => {
+  if (typeof window !== "undefined") {
+    localStorage.setItem("ecommerce-frmi-jwt", JSON.stringify(data));
+    next();
   }
 };
