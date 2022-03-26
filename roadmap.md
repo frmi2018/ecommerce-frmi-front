@@ -64,10 +64,18 @@ Mise en place du frontend sur Netlify (optionnel)
 
 ✅commit "User signup"
 
-🎫 Controler la saisie de l'utilisateur dans la page inscription
+🎫 Controler la saisie name/email/password
+🎫 Rediriger sur la page signin une fois inscrit
 
 ✅commit "User signup success and error"
 
 🎫 Externaliser la méthode signup
 
 ✅commit "Code refactoring - Signup"
+
+🎫 Créer le formulaire de connexion
+🎫 Controler la saisie email/password
+🎫 Envoyer les données en back
+🎫 Rediriger sur la page home une fois connecté
+
+✅commit "User signin"
