@@ -67,3 +67,7 @@ Mise en place du frontend sur Netlify (optionnel)
 🎫 Controler la saisie de l'utilisateur dans la page inscription
 
 ✅commit "User signup success and error"
+
+🎫 Externaliser la méthode signup
+
+✅commit "Code refactoring - Signup"
