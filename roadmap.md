@@ -83,3 +83,7 @@ Mise en place du frontend sur Netlify (optionnel)
 🎫 Sauvegarder les infos utilisateur et le token dans le localstorage du client
 
 ✅commit "Save user and token in local storage"
+
+🎫 Gérer la déconnexion
+
+✅commit "User signout"

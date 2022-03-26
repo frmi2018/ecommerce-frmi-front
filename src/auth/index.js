@@ -42,3 +42,18 @@ export const authenticate = (data, next) => {
     next();
   }
 };
+
+export const signout = async (next) => {
+  if (typeof window !== "undefined") {
+    localStorage.removeItem("ecommerce-frmi-jwt");
+    next();
+    try {
+      const response = await fetch(`${API}/signout`, {
+        method: "GET",
+      });
+      console.log("signout", response);
+    } catch (err) {
+      return console.log(err);
+    }
+  }
+};
