@@ -63,3 +63,7 @@ Mise en place du frontend sur Netlify (optionnel)
 🎫 Envoyer les données en back pour créer le nouvel utilisateur dans la bdd
 
 ✅commit "User signup"
+
+🎫 Controler la saisie de l'utilisateur dans la page inscription
+
+✅commit "User signup success and error"
