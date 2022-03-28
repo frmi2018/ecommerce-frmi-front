@@ -1,6 +1,6 @@
 import { React } from "react";
 import { NavLink, Link, useNavigate } from "react-router-dom";
-import { signout } from "../auth";
+import { signout, isAuthenticated } from "../auth";
 
 const Menu = () => {
   const navigate = useNavigate();
@@ -30,35 +30,42 @@ const Menu = () => {
               Home
             </NavLink>
           </li>
-          <li>
-            <NavLink
-              to="/signin"
-              className={({ isActive }) =>
-                isActive ? "nav-link active" : "nav-link"
-              }>
-              Signin
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/signup"
-              className={({ isActive }) =>
-                isActive ? "nav-link active" : "nav-link"
-              }>
-              Signup
-            </NavLink>
-          </li>
+          {!isAuthenticated() && (
+            <>
+              <li>
+                <NavLink
+                  to="/signin"
+                  className={({ isActive }) =>
+                    isActive ? "nav-link active" : "nav-link"
+                  }>
+                  Signin
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/signup"
+                  className={({ isActive }) =>
+                    isActive ? "nav-link active" : "nav-link"
+                  }>
+                  Signup
+                </NavLink>
+              </li>
+            </>
+          )}
 
-          <span
-            className="btn btn-danger"
-            style={{ cursor: "pointer" }}
-            onClick={() =>
-              signout(() => {
-                navigate("/");
-              })
-            }>
-            Signout
-          </span>
+          {isAuthenticated() && (
+            <li>
+              <button
+                className="btn btn-danger"
+                onClick={() =>
+                  signout(() => {
+                    navigate("/");
+                  })
+                }>
+                Signout
+              </button>
+            </li>
+          )}
         </ul>
       </div>
     </nav>

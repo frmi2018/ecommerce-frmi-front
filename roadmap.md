@@ -87,3 +87,7 @@ Mise en place du frontend sur Netlify (optionnel)
 🎫 Gérer la déconnexion
 
 ✅commit "User signout"
+
+🎫 Afficher / cacher les liens du menu
+
+✅commit "Show and hide links conditionally"

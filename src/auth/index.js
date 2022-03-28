@@ -57,3 +57,14 @@ export const signout = async (next) => {
     }
   }
 };
+
+export const isAuthenticated = () => {
+  if (typeof window == "undefined") {
+    return false;
+  }
+  if (localStorage.getItem("ecommerce-frmi-jwt")) {
+    return JSON.parse(localStorage.getItem("ecommerce-frmi-jwt"));
+  } else {
+    return false;
+  }
+};
