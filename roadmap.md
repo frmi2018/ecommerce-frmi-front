@@ -99,3 +99,10 @@ Mise en place du frontend sur Netlify (optionnel)
 🎫 Créer la page /dashboard de l'utilisateur
 
 ✅commit "User dashboard"
+
+🎫 Sur la page /dashboard de l'utilisateur
+
+- Ajouter un lien vers le panier
+- Ajouter un lien pour mettre à jour le profil
+
+✅commit "Links on user dashboard"
