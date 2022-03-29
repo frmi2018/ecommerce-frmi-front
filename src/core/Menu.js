@@ -30,6 +30,15 @@ const Menu = () => {
               Home
             </NavLink>
           </li>
+          <li className="nav-item">
+            <NavLink
+              to="/dashboard"
+              className={({ isActive }) =>
+                isActive ? "nav-link active" : "nav-link"
+              }>
+              Dashboard
+            </NavLink>
+          </li>
           {!isAuthenticated() && (
             <>
               <li>

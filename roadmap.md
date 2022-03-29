@@ -91,3 +91,7 @@ Mise en place du frontend sur Netlify (optionnel)
 🎫 Afficher / cacher les liens du menu
 
 ✅commit "Show and hide links conditionally"
+
+🎫 Créer la route /dashboard accessible uniquement si connecté
+
+✅commit "Private route for authenticated users only"
