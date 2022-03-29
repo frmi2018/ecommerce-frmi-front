@@ -95,3 +95,7 @@ Mise en place du frontend sur Netlify (optionnel)
 🎫 Créer la route /dashboard accessible uniquement si connecté
 
 ✅commit "Private route for authenticated users only"
+
+🎫 Créer la page /dashboard de l'utilisateur
+
+✅commit "User dashboard"
