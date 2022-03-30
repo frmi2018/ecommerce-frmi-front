@@ -85,6 +85,9 @@ const Signin = () => {
         return <Navigate to="/user/dashboard" />;
       }
     }
+    if (isAuthenticated()) {
+      return <Navigate to="/" />;
+    }
   };
 
   return (

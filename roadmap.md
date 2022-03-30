@@ -106,3 +106,12 @@ Mise en place du frontend sur Netlify (optionnel)
 - Ajouter un lien pour mettre à jour le profil
 
 ✅commit "Links on user dashboard"
+
+🎫 Créer la page /dashboard admin
+🎫 Sur la page /dashboard admin
+
+- Ajouter un lien pour créer une catégorie
+- Ajouter un lien pour créer un produit
+  🎫 Empécher l'accés au différents dashboard en modifiant l'URL dans le navigateur
+
+✅commit "Admin dashboard"

@@ -30,15 +30,28 @@ const Menu = () => {
               Home
             </NavLink>
           </li>
-          <li className="nav-item">
-            <NavLink
-              to="/user/dashboard"
-              className={({ isActive }) =>
-                isActive ? "nav-link active" : "nav-link"
-              }>
-              Dashboard
-            </NavLink>
-          </li>
+          {isAuthenticated() && isAuthenticated().user.role === 0 && (
+            <li className="nav-item">
+              <NavLink
+                to="/user/dashboard"
+                className={({ isActive }) =>
+                  isActive ? "nav-link active" : "nav-link"
+                }>
+                Dashboard
+              </NavLink>
+            </li>
+          )}
+          {isAuthenticated() && isAuthenticated().user.role === 1 && (
+            <li className="nav-item">
+              <NavLink
+                to="/admin/dashboard"
+                className={({ isActive }) =>
+                  isActive ? "nav-link active" : "nav-link"
+                }>
+                Dashboard
+              </NavLink>
+            </li>
+          )}
           {!isAuthenticated() && (
             <>
               <li>
