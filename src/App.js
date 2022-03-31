@@ -8,6 +8,7 @@ import Dashboard from "./user/UserDashboard";
 import AdminRoute from "./auth/AdminRoute";
 import AdminDashboard from "./user/AdminDashboard";
 import AddCategory from "./admin/AddCategory";
+import AddProduct from "./admin/AddProduct";
 
 const App = () => {
   return (
@@ -36,6 +37,14 @@ const App = () => {
           element={
             <AdminRoute>
               <AddCategory />
+            </AdminRoute>
+          }
+        />
+        <Route
+          path="/create/product"
+          element={
+            <AdminRoute>
+              <AddProduct />
             </AdminRoute>
           }
         />

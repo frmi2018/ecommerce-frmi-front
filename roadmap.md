@@ -124,3 +124,7 @@ Mise en place du frontend sur Netlify (optionnel)
 🎫 Créer une catégorie dans la BDD
 
 ✅commit "Category create success and error"
+
+🎫 Créer un produit dans la BDD
+
+✅commit "Create product"

@@ -8,13 +8,15 @@ const Layout = ({
   children,
 }) => {
   return (
-    <div>
+    <div className="container">
       <Menu />
-      <div className="jumbotron">
-        <h2>{title}</h2>
-        <p className="lead">{description}</p>
+      <div className="container-fluid">
+        <div className="jumbotron container-fluid">
+          <h2>{title}</h2>
+          <p className="lead">{description}</p>
+        </div>
+        <div className={className}>{children}</div>
       </div>
-      <div className={className}>{children}</div>
     </div>
   );
 };
