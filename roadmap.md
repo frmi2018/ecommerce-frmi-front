@@ -129,7 +129,15 @@ Mise en place du frontend sur Netlify (optionnel)
 
 ✅commit "Create product"
 
-🎫 Afficher la liste des produits les plus vendus
-🎫 Afficher la lisete des produits par arrivage
+🎫 Sur la page /
+
+- Afficher la liste des produits les plus vendus
+- Afficher la liste des produits par arrivage
 
 ✅commit "Products by arrival and sell"
+
+🎫 Sur la page /
+
+- Afficher la liste des produits sous forme de cartes
+
+✅commit "Show products in card"
