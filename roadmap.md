@@ -120,3 +120,7 @@ Mise en place du frontend sur Netlify (optionnel)
 🎫 Créer la page /create/category
 
 ✅commit "AddCategory component"
+
+🎫 Créer une catégorie dans la BDD
+
+✅commit "Category create success and error"
