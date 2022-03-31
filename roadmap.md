@@ -128,3 +128,8 @@ Mise en place du frontend sur Netlify (optionnel)
 🎫 Créer un produit dans la BDD
 
 ✅commit "Create product"
+
+🎫 Afficher la liste des produits les plus vendus
+🎫 Afficher la lisete des produits par arrivage
+
+✅commit "Products by arrival and sell"
