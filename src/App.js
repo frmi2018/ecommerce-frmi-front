@@ -7,6 +7,7 @@ import PrivateRoute from "./auth/PrivateRoute";
 import Dashboard from "./user/UserDashboard";
 import AdminRoute from "./auth/AdminRoute";
 import AdminDashboard from "./user/AdminDashboard";
+import AddCategory from "./admin/AddCategory";
 
 const App = () => {
   return (
@@ -27,6 +28,14 @@ const App = () => {
           element={
             <AdminRoute>
               <AdminDashboard />
+            </AdminRoute>
+          }
+        />
+        <Route
+          path="/create/category"
+          element={
+            <AdminRoute>
+              <AddCategory />
             </AdminRoute>
           }
         />
