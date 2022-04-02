@@ -136,8 +136,14 @@ Mise en place du frontend sur Netlify (optionnel)
 
 ✅commit "Products by arrival and sell"
 
-🎫 Sur la page /
-
-- Afficher la liste des produits sous forme de cartes
+🎫 Afficher la liste des produits dans un composant Card sur la page /
 
 ✅commit "Show products in card"
+
+🎫 Afficher l'image des produits
+
+✅commit "Show products image"
+
+🎫 Ajouter une animation de couleur au header des pages
+
+✅commit "animation css"

@@ -1,5 +1,6 @@
 import React from "react";
 import Menu from "./Menu";
+import "../styles.css";
 
 const Layout = ({
   title = "Title",
@@ -8,16 +9,14 @@ const Layout = ({
   children,
 }) => {
   return (
-    <div className="container">
+    <>
       <Menu />
-      <div className="container-fluid">
-        <div className="jumbotron container-fluid">
-          <h2>{title}</h2>
-          <p className="lead">{description}</p>
-        </div>
-        <div className={className}>{children}</div>
+      <div className="jumbotron container-fluid d-flex  flex-column justify-content-center">
+        <h2>{title}</h2>
+        <p className="lead">{description}</p>
       </div>
-    </div>
+      <div className={className}>{children}</div>
+    </>
   );
 };
 export default Layout;
