@@ -155,3 +155,7 @@ Mise en place du frontend sur Netlify (optionnel)
 🎫 importer les catégories dans la page shop
 
 ✅commit "Get categories in shop page"
+
+🎫 afficher les catégories dans la page shop
+
+✅commit "Show categories in shop page"

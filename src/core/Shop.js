@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Layout from "./Layout";
 import { getCategories } from "./apiCore";
+import Checkbox from "./Checkbox";
 
 const Shop = () => {
   const [categories, setCategories] = useState([]);
@@ -27,7 +28,10 @@ const Shop = () => {
       description="Search and find books of your choice"
       className="container-fluid">
       <div className="row">
-        <div className="col-4">{JSON.stringify(categories)}</div>
+        <h4>Filter by categories</h4>
+        <div className="col-4">
+          <Checkbox categories={categories} />
+        </div>
         <div className="col-8">right sidebar</div>
       </div>
     </Layout>
