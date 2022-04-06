@@ -37,6 +37,15 @@ const Menu = () => {
                 Home
               </NavLink>
             </li>
+            <li className="nav-item">
+              <NavLink
+                to="/shop"
+                className={({ isActive }) =>
+                  isActive ? "nav-link active" : "nav-link"
+                }>
+                Shop
+              </NavLink>
+            </li>
             {isAuthenticated() && isAuthenticated().user.role === 0 && (
               <li className="nav-item">
                 <NavLink

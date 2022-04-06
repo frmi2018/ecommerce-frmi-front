@@ -147,3 +147,7 @@ Mise en place du frontend sur Netlify (optionnel)
 🎫 Ajouter une animation de couleur au header des pages
 
 ✅commit "animation css"
+
+🎫 Ajouter une page shop
+
+✅commit "Shop page"

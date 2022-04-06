@@ -9,11 +9,13 @@ import AdminRoute from "./auth/AdminRoute";
 import AdminDashboard from "./user/AdminDashboard";
 import AddCategory from "./admin/AddCategory";
 import AddProduct from "./admin/AddProduct";
+import Shop from "./core/Shop";
 
 const App = () => {
   return (
     <div>
       <Routes>
+        <Route path="/shop" element={<Shop />} />
         <Route path="/signin" element={<Signin />} />
         <Route path="/signup" element={<Signup />} />
         <Route
