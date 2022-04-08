@@ -160,6 +160,10 @@ Mise en place du frontend sur Netlify (optionnel)
 
 ✅commit "Show categories in shop page"
 
-🎫 enregistrer les catégories sélectionnées dans un tableau pour requète backend
+🎫 enregistrer les catégories sélectionnées dans un tableau
 
 ✅commit "Handle categories toggle"
+
+🎫 passer les catégories sélectionnées dans le composant parent (Shop)
+
+✅commit "Passing categories filter to parent component"
