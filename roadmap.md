@@ -159,3 +159,7 @@ Mise en place du frontend sur Netlify (optionnel)
 🎫 afficher les catégories dans la page shop
 
 ✅commit "Show categories in shop page"
+
+🎫 enregistrer les catégories sélectionnées dans un tableau pour requète backend
+
+✅commit "Handle categories toggle"
