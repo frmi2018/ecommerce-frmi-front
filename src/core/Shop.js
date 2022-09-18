@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Layout from "./Layout";
 import { getCategories } from "./apiCore";
 import Checkbox from "./Checkbox";
+import RadioBox from "./RadioBox";
 import { prices } from "./fixedPrices";
 
 const Shop = () => {
@@ -39,12 +40,21 @@ const Shop = () => {
       description="Search and find books of your choice"
       className="container-fluid">
       <div className="row">
-        <h4>Filter by categories</h4>
         <div className="col-4">
-          <Checkbox
-            categories={categories}
-            handleFilters={(filters) => handleFilters(filters, "category")}
-          />
+          <h4>Filter by categories</h4>
+          <ul>
+            <Checkbox
+              categories={categories}
+              handleFilters={(filters) => handleFilters(filters, "category")}
+            />
+          </ul>
+          <h4>Filter by price range</h4>
+          <ul>
+            <RadioBox
+              prices={prices}
+              handleFilters={(filters) => handleFilters(filters, "price")}
+            />
+          </ul>
         </div>
         <div className="col-8">{JSON.stringify(myFilters)}</div>
       </div>
