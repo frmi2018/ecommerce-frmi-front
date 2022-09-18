@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Layout from "./Layout";
 import { getCategories } from "./apiCore";
 import Checkbox from "./Checkbox";
+import { prices } from "./fixedPrices";
 
 const Shop = () => {
   const [myFilters, setMyFilters] = useState({
