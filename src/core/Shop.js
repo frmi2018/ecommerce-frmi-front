@@ -1,19 +1,20 @@
 import React, { useEffect, useState } from "react";
 import Layout from "./Layout";
-import { getCategories, getfilteredProducts } from "./apiCore";
+import { getCategories, getFilteredProducts } from "./apiCore";
 import Checkbox from "./Checkbox";
 import RadioBox from "./RadioBox";
 import { prices } from "./fixedPrices";
+import Card from "./Card";
 
 const Shop = () => {
   const [myFilters, setMyFilters] = useState({
     filters: { category: [], price: [] },
   });
   const [categories, setCategories] = useState([]);
-  const [, setError] = useState(false);
+  const [error, setError] = useState(false);
   const [limit, setLimit] = useState(6);
   const [skip, setSkip] = useState(0);
-  const [filteredResults, setFilteredresults] = useState(0);
+  const [filteredResults, setFilteredResults] = useState([]);
 
   // load categories and set form data
   const init = () => {
@@ -28,11 +29,11 @@ const Shop = () => {
 
   const loadFilteredResults = (newFilters) => {
     // console.log(newFilters);
-    getfilteredProducts(skip, limit, newFilters).then((data) => {
+    getFilteredProducts(skip, limit, newFilters).then((data) => {
       if (data.error) {
         setError(data.error);
       } else {
-        setFilteredresults(data);
+        setFilteredResults(data.data);
       }
     });
   };
@@ -88,7 +89,14 @@ const Shop = () => {
             />
           </ul>
         </div>
-        <div className="col-8">{JSON.stringify(filteredResults)}</div>
+        <div className="col-8">
+          <h2 className="mb-4">Products</h2>
+          <div className="row">
+            {filteredResults.map((product, i) => (
+              <Card key={i} product={product} />
+            ))}
+          </div>
+        </div>
       </div>
     </Layout>
   );

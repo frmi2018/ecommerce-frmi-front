@@ -25,7 +25,7 @@ export const getCategories = async () => {
   }
 };
 
-export const getfilteredProducts = async (skip, limit, filters = {}) => {
+export const getFilteredProducts = async (skip, limit, filters = {}) => {
   const data = { limit, skip, filters };
   try {
     const response = await fetch(`${API}/products/by/search`, {
