@@ -24,3 +24,20 @@ export const getCategories = async () => {
     return console.log(err);
   }
 };
+
+export const getfilteredProducts = async (skip, limit, filters = {}) => {
+  const data = { limit, skip, filters };
+  try {
+    const response = await fetch(`${API}/products/by/search`, {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
+    return await response.json();
+  } catch (response_1) {
+    return response_1.json();
+  }
+};
