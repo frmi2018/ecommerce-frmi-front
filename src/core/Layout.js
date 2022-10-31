@@ -11,7 +11,7 @@ const Layout = ({
   return (
     <>
       <Menu />
-      <div className="jumbotron container-fluid d-flex  flex-column justify-content-center">
+      <div className="jumbotron container-fluid d-flex flex-column justify-content-center">
         <h2>{title}</h2>
         <p className="lead">{description}</p>
       </div>

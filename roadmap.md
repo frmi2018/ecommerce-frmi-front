@@ -167,3 +167,17 @@ Mise en place du frontend sur Netlify (optionnel)
 🎫 passer les catégories sélectionnées dans le composant parent (Shop)
 
 ✅commit "Passing categories filter to parent component"
+
+🎫 Sur la page shop, afficher les articles des catégories sélectionnées et dont le prix est compris entre une valeur min/max
+
+✅commit "Set filters with category"
+✅commit "Fixed price range"
+✅commit "Radio buttons for price range"
+✅commit "Filter with price range"
+✅commit "show products by filter on shop page"
+✅commit "Pass products to card component"
+✅commit "add load more button"
+
+🎫 Ajouter un moteur de recherche d'article
+
+✅commit "search component"
