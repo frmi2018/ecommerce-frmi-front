@@ -45,9 +45,8 @@ export const getFilteredProducts = async (skip, limit, filters = {}) => {
 
 export const list = async (params) => {
   const query = queryString.stringify(params);
-  console.log("query => ", query);
   try {
-    const response = await fetch(`${API}/products?${query}`, {
+    const response = await fetch(`${API}/products/search?${query}`, {
       method: "GET",
     });
     return await response.json();

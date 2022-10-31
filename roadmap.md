@@ -181,5 +181,6 @@ Mise en place du frontend sur Netlify (optionnel)
 🎫 Ajouter un moteur de recherche d'article
 
 ✅commit "search component"
-✅commit "implementing search"
 📦query-string ([Doc](https://www.npmjs.com/package/query-string))
+✅commit "implementing search"
+✅commit "Backend implementation of search"

@@ -48,8 +48,17 @@ const Search = () => {
   };
 
   const handleChange = (name) => (event) => {
-    console.log(data);
     setData({ ...data, [name]: event.target.value, searched: false });
+  };
+
+  const searchedProducts = (results = []) => {
+    return (
+      <div className="row">
+        {results.map((product, i) => (
+          <Card key={i} product={product} />
+        ))}
+      </div>
+    );
   };
 
   const searchForm = () => (
@@ -82,10 +91,11 @@ const Search = () => {
 
   return (
     <div className="row">
-      <div className="container mb-3">
+      <div className="container-fluid mb-3">
         {searchForm()}
-        {JSON.stringify(results)}
+        {/* {JSON.stringify(results)} */}
       </div>
+      <div className="container-fluid mb-3">{searchedProducts(results)}</div>
     </div>
   );
 };

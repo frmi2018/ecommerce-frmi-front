@@ -51,7 +51,7 @@ export const signout = async (next) => {
       const response = await fetch(`${API}/signout`, {
         method: "GET",
       });
-      console.log("signout", response);
+      // console.log("signout", response);
     } catch (err) {
       return console.log(err);
     }
