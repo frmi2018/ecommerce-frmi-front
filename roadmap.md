@@ -178,9 +178,10 @@ Mise en place du frontend sur Netlify (optionnel)
 ✅commit "Pass products to card component"
 ✅commit "add load more button"
 
-🎫 Ajouter un moteur de recherche d'article
+🎫 Ajouter un moteur de recherche de titre d'un livre par catégorie ou toutes les catégories
 
 ✅commit "search component"
 📦query-string ([Doc](https://www.npmjs.com/package/query-string))
 ✅commit "implementing search"
-✅commit "Backend implementation of search"
+✅commit "Backend implementation of search" + commit back avec le même nom
+✅commit "Search message to users"
