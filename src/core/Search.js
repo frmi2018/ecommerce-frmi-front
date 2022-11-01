@@ -75,10 +75,12 @@ const Search = () => {
 
   const searchForm = () => (
     <form onSubmit={searchSubmit}>
-      <span className="input-group-text">
-        <div className="input-group input-group-lg">
+      <span className="input-group-text input-group-lg mt-2">
+        <div className="input-group">
           <div className="input-group-prepend">
-            <select className="btn mr-2" onChange={handleChange("category")}>
+            <select
+              className="input-group-text me-2"
+              onChange={handleChange("category")}>
               <option value="All">All Category</option>
               {categories.map((c, i) => (
                 <option key={i} value={c._id}>
@@ -91,11 +93,11 @@ const Search = () => {
             type="search"
             className="form-control"
             onChange={handleChange("search")}
-            placeholder="Search by name"
+            placeholder="Enter name"
           />
         </div>
-        <div className="btn input-group-append" style={{ border: "none" }}>
-          <button className="input-group-text">Search</button>
+        <div>
+          <button className="input-group-text ms-2">Search</button>
         </div>
       </span>
     </form>

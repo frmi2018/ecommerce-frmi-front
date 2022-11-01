@@ -185,3 +185,7 @@ Mise en place du frontend sur Netlify (optionnel)
 ✅commit "implementing search"
 ✅commit "Backend implementation of search" + commit back avec le même nom
 ✅commit "Search message to users"
+
+🎫 Afficher le détaill d'un produit sur une page /product/id du produit
+
+✅commit "Single product component"

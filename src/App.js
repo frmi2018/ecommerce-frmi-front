@@ -10,6 +10,7 @@ import AdminDashboard from "./user/AdminDashboard";
 import AddCategory from "./admin/AddCategory";
 import AddProduct from "./admin/AddProduct";
 import Shop from "./core/Shop";
+import Product from "./core/Product";
 
 const App = () => {
   return (
@@ -50,6 +51,7 @@ const App = () => {
             </AdminRoute>
           }
         />
+        <Route path="/product/:productId" element={<Product />} />
         <Route path="/" element={<Home />} />
       </Routes>
     </div>
