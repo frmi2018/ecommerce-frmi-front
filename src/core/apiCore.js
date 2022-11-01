@@ -57,7 +57,6 @@ export const list = async (params) => {
 
 export const read = async (productId) => {
   try {
-    console.log("envoi");
     const response = await fetch(`${API}/product/${productId}`, {
       method: "GET",
     });
